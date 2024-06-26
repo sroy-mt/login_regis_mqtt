@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Register Page</title>
+{% endblock %}
+
+{% block body %}
+<h2>Register for Flask app pt.2</h2>
+<form method="POST" action="/register">
+    Email <input type="text" name="email" required />
+    <br>
+    Password <input type="password" name="password" required />
+    <br>
+    Re-enter Password <input type="password" name="reenter_password" required />
+    <br>
+    <input type="submit" value="Register">
+</form>
+{% endblock %}
